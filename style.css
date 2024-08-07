@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Rubik:ital,wght@0,300..900;1,300..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Rubik", sans-serif;
+}
+ul {
+list-style: none;
+}
+a {
+  text-decoration: none;
+}
+p{ 
+  line-height: 1.6;
+}
+@keyframes new {
+  0%{
+    transform: translateY(-50px);
+  }
+  50%{
+    transform: translateY(7px);
+  }
+  100%{
+    transform: translateY(-50px);
+  }
+}
+/* 1 section */
+#pre {
+  background: url(./home-bg.png) no-repeat center center/cover rgb(10, 5, 75) ;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+}
+#pre .nav {
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  min-height: 120px;
+}
+
+#pre .nav ul {
+display: flex;
+
+}
+
+#pre .nav ul li a {
+  color: aliceblue;
+  margin-left: 17px;
+  font-size: 18px;
+  padding-bottom:10px ;
+}
+
+#pre .nav ul li  .home {
+  color: rgb(98, 87, 241);
+}
+
+#pre .nav ul li a:hover {
+  border-bottom: solid 1px rgb(250, 248, 243);
+}
+
+#pre .nav .logo {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+.home-content {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  column-gap: 4rem;
+  color: aliceblue;
+  min-height: calc(100vh - 120px);
+}
+
+.home-content img {
+  max-width: 100%;
+  animation: new 5s infinite;
+}
+
+.home-content h1 {
+  font-size: 40px;
+}
+.home-content p {
+font-size: 14px;
+margin: 1rem 0 3rem;
+}
+ .btn{
+display: inline-block;
+padding:15px 40px;
+background-color: rgb(43, 89, 158);
+color: aliceblue;
+transition: all 0.3s ease;
+}
+
+.btn:hover{
+  background-color: rgb(32, 65, 115); 
+}
+
+/* service section */
+#services,#why-us {
+padding: 6rem 0;
+text-align: center;
+}
+
+#services h2, #about-us h2 ,#why-us h2 ,#our-team h2 ,#customer h2{
+  text-align: center;
+  color: rgb(20, 13, 89);
+  font-size: 32px;
+}
+.text {
+  color: rgb(33, 131, 180);
+}
+#services .row ,#why-us .row ,#our-team .row{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 3rem;
+  margin: 2rem 0;
+ }
+#services .row .col {
+padding: 20px;
+background-color: rgb(217, 217, 219);
+border-radius: 5px;
+box-shadow: 3px 3px 2px rgb(0,0,0,0.1);
+transition: all 0.3s ease;
+}
+
+#services .row .col:hover{
+transform: scale(1.04);
+}
+#services .row .col h3 ,#why-us .row .col h3{
+  font-size: 20px;
+  color: rgb(14, 19, 78);
+  margin: 10px 0;
+}
+#services .row .col p , #why-us .row .col p{
+  font-size: 14px;
+}
+
+#services .row .col img, #why-us .row .col img {
+  max-width: 60px;
+}
+/* about us section */
+#about-us ,#our-team ,#footer .partie{
+
+  background-color: rgb(10, 5, 75);
+ padding: 3.5rem 0;
+ color: aliceblue;
+}
+#about-us .row {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 2rem;
+  margin-top: 3rem;
+}
+#about-us .row img {
+  max-width:100%;
+}
+#about-us h2 ,#our-team h2 {
+  color: aliceblue;
+}
+#about-us .row h3 {
+  font-size: 25px;
+}
+#about-us .row p {
+  margin: 20px 0 ;
+}
+
+/* why us section */
+
+#why-us .row ,#our-team .row {
+  margin-bottom: 0;
+   }
+
+   /* our team section */
+   #our-team .row .col {
+    background-color: rgb(4, 49, 88);
+    padding: 3rem;
+    text-align: center;
+   }
+
+   #our-team .row .col img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 4px white;
+   }
+   #our-team .row .col h3 {
+    color: rgb(8, 98, 177);
+    margin: 10px 0;
+   }
+   #our-team .row .col p {
+    font-size: 14px;
+   }
+   #our-team .row .col .social,#footer .row .social  {
+margin-top: 25px;
+   }
+   #our-team .row .col .social a ,#footer .row .social a{
+    font-size: 20px;
+    color: aliceblue;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+   }
+   #our-team .row .col .social a:hover ,#footer .row .social a:hover,#footer .row .col3 ul li a:hover{
+    color: rgb(41, 101, 153);
+   }
+
+   /*customer section*/
+
+#customer {
+  padding: 6rem 0;
+}
+#customer .row {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+column-gap: 2rem;
+margin-top: 6rem;
+}
+#customer .row .col img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  position: absolute;
+  top: -50px;
+left: 20px;
+}
+
+#customer .row .col {
+  background-color: rgb(208, 208, 208);
+padding: 3rem 2rem;
+border-radius: 7px;
+box-shadow: 1px 1px 5px rgb(0,0,0,0.2);
+position: relative;
+}
+#customer .row .col h3 {
+  font-size: 20px;
+  margin: 17px 0 10px ;
+  color: rgb(3, 3, 71);
+}
+#customer .row .col p{
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+/*footer*/
+/*partie*/
+
+#footer .row h2 {
+  margin-bottom: 1rem;
+}
+#footer .row ul li {
+margin-bottom: 14px;
+color: aliceblue;
+}
+#footer .row ul li i {
+  margin-right: 7px;
+}
+#footer .row .social a {
+  color: aliceblue;
+  margin: 10px ;
+}
+#footer .row .col3 ul li a{
+  color: aliceblue;
+  transition: all 0.3s ease;
+}
+#footer .row .col4 input {
+width: 100%;
+padding: 10px 0;
+background-color: transparent;
+border: none;
+color: aliceblue;
+}
+#footer .row .col4 input::placeholder{
+  color: aliceblue;
+}
+#footer .row .col4 input:focus {
+  outline: none;
+}
+
+#footer .row .col4 .btn {
+margin-top: 7px;
+width: 100%;
+text-align: center;
+}
+/*copie*/
+#footer .copie {
+padding: 1rem;
+text-align: center;
+}
+#footer .copie a {
+  color: rgb(35, 75, 128);
+}
+/*respnsive */
+
+@media(max-width:900px){
+
+  #services .row ,#why-us .row ,#our-team .row{
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 2rem;
+   }
+}
+@media(max-width:900px){
+
+#pre .nav {
+  flex-direction: column;
+  padding: 30px 0;
+}
+#pre .nav .logo {
+  margin-bottom: 20px;
+}
+#pre .nav ul li a {
+font-size: 15px;
+  margin: 0 5px;
+}
+.home-content {
+  grid-template-columns: 1fr;
+  row-gap: 3rem;
+}
+.home-content .col h1 {
+  font-size: 35px;
+}
+
+#services .row ,#why-us .row ,#our-team .row {
+  grid-template-columns: 1fr;
+
+}
+#about-us .row ,#footer .partie .row  ,#customer .row { 
+  grid-template-columns: 1fr;
+  row-gap: 4rem;
+
+}
+#footer .partie .row .col{
+ margin-bottom: 50px;
+}
+ }
